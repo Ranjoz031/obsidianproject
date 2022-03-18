@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "957798208056",
+    "project_id": "obsidian-bank",
+    "storage_bucket": "obsidian-bank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:957798208056:android:c421c89257075c6fe40ccd",
+        "android_client_info": {
+          "package_name": "com.example.obsidianbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "957798208056-qg7a6pbr8dta1710mjd7v3vrf8mb936s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALlb5b_ltqEMB0h6h8SWg8xH8of2DYdsw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "957798208056-qg7a6pbr8dta1710mjd7v3vrf8mb936s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

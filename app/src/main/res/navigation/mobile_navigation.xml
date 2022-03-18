@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation.xml"
+    app:startDestination="@id/Welcome">
+    <fragment
+        android:id="@+id/Welcome"
+        android:name="com.example.obsidianbank.Welcome"
+        android:label="fragment_mainwelcome"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcome_to_secondwelcome"
+            app:destination="@id/secondwelcome"
+            app:popUpToInclusive="true"
+            app:popUpTo="@layout/fragment_splash"
+            app:launchSingleTop="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/secondwelcome"
+        android:name="com.example.obsidianbank.secondwelcome"
+        android:label="fragment_secondwelcome"
+        tools:layout="@layout/fragment_secondwelcome">
+
+        <action
+            android:id="@+id/action_secondwelcome_to_thirdwelcome"
+            app:destination="@id/thirdwelcome"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/secondwelcome"/>
+    </fragment>
+    <fragment
+        android:id="@+id/thirdwelcome"
+        android:name="com.example.obsidianbank.thirdwelcome"
+        android:label="fragment_thirdwelcome"
+        tools:layout="@layout/fragment_thirdwelcome" >
+        <action
+            android:id="@+id/action_thirdwelcome_to_fourthwelcome"
+            app:destination="@id/fourthwelcome"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fourthwelcome"
+        android:name="com.example.obsidianbank.fourthwelcome"
+        android:label="fragment_fourthwelcome"
+        tools:layout="@layout/fragment_fourthwelcome">
+    <action
+        android:id="@+id/action_fourthwelcome_to_registerscreen"
+        app:destination="@+id/registerscreen"
+        app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>
